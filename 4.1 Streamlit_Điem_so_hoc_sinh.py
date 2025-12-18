@@ -9,7 +9,7 @@ import pandas as pd
 import streamlit as st
 
 # Viết title
-st.title("Phân tích dữ liệu điểm số học sinh")
+st.title("Trang web phân tích dữ liệu điểm số học sinh")
 
 # Box upload file
 uploaded_file = st.file_uploader("Tải file lên tại đây!", type=["xlsx"])
@@ -93,4 +93,5 @@ if uploaded_file is not None:
     #                              với chiều rộng 750 pixel. Đây là cách
     #                              Streamlit render ảnh đã lưu từ Matplotlib.
     st.image(img,width=750)
+
     st.markdown("Biểu đồ phân bố điểm số.")
